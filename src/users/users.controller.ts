@@ -10,7 +10,7 @@ export class UsersController {
     // criar (POST) um novo usuário
     @Post()
     create(@Body() req:CreateUserDTO){
-        return this.usersService.create();
+        return this.usersService.create(req);
     }
 
     // listar todos  (GET) localhost:3000/users
