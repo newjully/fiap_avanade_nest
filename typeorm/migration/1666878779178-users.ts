@@ -11,7 +11,7 @@ export class users1666878779178 implements MigrationInterface {
                 columns: [
                 idColumn('id'),
                 varcharColumn('name', '100', false),
-                varcharColumn('email', '255', false),
+                varcharColumn('email', '255', false, true),
                 varcharColumn('password', '64', false),
             ],
             }),
